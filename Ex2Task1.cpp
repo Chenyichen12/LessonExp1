@@ -1,7 +1,10 @@
 //
 // Created by 陈鹏宇 on 2023/11/10.
 //
+#pragma once
 #include "iostream"
+#include "Ex2Task2.cpp"
+#include "Ex2Task3.cpp"
 using namespace std;
 class Exercise2{
 public:
@@ -13,6 +16,9 @@ public:
         for (int i = 0; i < n; ++i) {
             cout<<array[i]<<' ';
         }
+        cout<<'\n';
+        Exercise3::outPut(array,n);
+        Exercise4::outPut(array,n);
         delete[] array;
     }
     static int* inPut(int& n){
